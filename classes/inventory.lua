@@ -47,7 +47,7 @@ end
 
 function Inventory:SortItems()
 	if SortBags and Addon.sets.serverSort then
-		SortBags()
+		C_Container.SortBags()
 	else
 		self:Super(Inventory):SortItems(self)
 	end
